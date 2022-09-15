@@ -33,7 +33,6 @@ int main()
             }
             if (ok)
             {
-                // cout<<div<<endl;
                 cout << "YES" << endl;
             }
             else
