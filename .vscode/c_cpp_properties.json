@@ -12,7 +12,8 @@
             ],
             "windowsSdkVersion": "10.0.17763.0",
             "compilerPath": "C:/MinGW/bin/g++.exe",
-            "intelliSenseMode": "windows-msvc-x64"
+            // "intelliSenseMode": "windows-msvc-x64"
+            "intelliSenseMode": "${default}"
         }
     ],
     "version": 4
