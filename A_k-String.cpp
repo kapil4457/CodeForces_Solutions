@@ -30,29 +30,19 @@ int main()
     else
     {
         string ans = "";
-        int count = s.length();
-
-        while (count != 0)
-        {
-            for (auto it : ref)
-            {
-                int temp = it.second / t;
-                if (temp == 0)
-                {
-                    temp++;
-                }
-
-                char ThisChar = it.first;
-                for (int i = 0; i < temp; i++)
-                {
-                    ans += ThisChar;
-                }
-                ref[ThisChar] -= temp;
-                count -= temp;
+        
+        for(auto it : ref){
+            int c = it.second/t;
+            for(int i = 0 ; i < c ; i ++){
+                ans.push_back(it.first);
             }
         }
+       
+       for(int i = 0 ; i < t ; i ++){
+        cout<<ans;
+       }
+       cout<<endl;
 
-        cout << ans;
     }
 
     return 0;
